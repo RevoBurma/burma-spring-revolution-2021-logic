@@ -1,22 +1,41 @@
 ငါလုပ်တာ = True
+
+မတရားသေနေပြီဆိုပုံတင်တဲ့ဟာတွေ = True
+fb_storyတင် = True
+igတင် = True
 ခရီးသွား = True
 ပုံတင် = True
-ခိုးသွား = False
 
-# def ခိုးသွား():
-#     if trip and not social_meida_post:
-#         ခိုးသွား = True
+ခိုးသွား = True
 
-def empathy_logic():
-    print("empathy_logic")
+# def setter_ခိုးသွား():
+
+def မတရားလောင်():
+    print("မတရားလောင်")
 
 def လောင်():
     print("လောင်")
 
-if ငါလုပ်တာ:
-    print("ALL OK")
-else:
-    if ခရီးသွား and ပုံတင်:
-        လောင်()
-    elif ခရီးသွား and not ပုံတင်:
-        empathy_logic()
+def empathy_logic():
+    print("empathy_logic")
+
+def စဆရက_all_ok_logic():
+    print("စဆရက_all_ok")
+
+def main():
+    if ငါလုပ်တာ:
+        စဆရက_all_ok_logic()
+    else:
+        if မတရားသေနေပြီဆိုပုံတင်တဲ့ဟာတွေ:
+            စဆရက_all_ok_logic()
+        elif ခရီးသွား and ပုံတင်:
+            လောင်()
+        elif fb_storyတင်:
+            empathy_logic()
+        elif igတင်:
+            empathy_logic()
+        elif ခိုးသွား:
+            empathy_logic()
+
+if __name__ == '__main__':
+    main()
