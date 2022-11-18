@@ -27,7 +27,7 @@ def main():
         စဆရက_all_ok_logic()
     else:
         if မတရားသေနေပြီဆိုပုံတင်တဲ့ဟာတွေ:
-            စဆရက_all_ok_logic()
+            မတရားလောင်()
         elif ခရီးသွား and ပုံတင်:
             လောင်()
         elif fb_storyတင်:
